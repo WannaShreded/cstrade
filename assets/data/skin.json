@@ -1,0 +1,222 @@
+[
+  {
+    "id": "skin_001",
+    "name": "AK-47 | Fire Serpent",
+    "weapon": "AK-47",
+    "rarity": "Covert",
+    "exterior": "Factory New",
+    "float": 0.0321,
+    "price": 1.8000,
+    "image": "ak_fire_serpent.png",
+    "thumbnail": "assets/images/thumbs/ak_fire_serpent.png"
+  },
+  {
+    "id": "skin_002",
+    "name": "AK-47 | The Oligarch",
+    "weapon": "AK-47",
+    "rarity": "Covert",
+    "exterior": "Minimal Wear",
+    "float": 0.0824,
+    "price": 585.00,
+    "image": "ak47_the_oligarch.png",
+    "thumbnail": "assets/images/thumbs/ak47_the_oligarch.png"
+  },
+  {
+    "id": "skin_003",
+    "name": "Neon Drift",
+    "weapon": "M4A4",
+    "rarity": "Rare",
+    "exterior": "Field-Tested",
+    "float": 0.2175,
+    "price": 24.99,
+    "image": "m4a4_neon_drift.png",
+    "thumbnail": "assets/images/thumbs/m4a4_neon_drift.png"
+  },
+  {
+    "id": "skin_004",
+    "name": "Midnight Bloom",
+    "weapon": "Glock-18",
+    "rarity": "Uncommon",
+    "exterior": "Well-Worn",
+    "float": 0.4123,
+    "price": 7.25,
+    "image": "glock_midnight_bloom.png",
+    "thumbnail": "assets/images/thumbs/glock_midnight_bloom.png"
+  },
+  {
+    "id": "skin_005",
+    "name": "Golden Edge",
+    "weapon": "Karambit",
+    "rarity": "Legendary",
+    "exterior": "Factory New",
+    "float": 0.0107,
+    "price": 249.99,
+    "image": "knife_golden_edge.png",
+    "thumbnail": "assets/images/thumbs/knife_golden_edge.png"
+  },
+  {
+    "id": "skin_006",
+    "name": "Verdant Shift",
+    "weapon": "P90",
+    "rarity": "Rare",
+    "exterior": "Field-Tested",
+    "float": 0.2768,
+    "price": 18.50,
+    "image": "p90_verdant_shift.png",
+    "thumbnail": "assets/images/thumbs/p90_verdant_shift.png"
+  },
+  {
+    "id": "skin_007",
+    "name": "Rustic Halo",
+    "weapon": "Nova",
+    "rarity": "Common",
+    "exterior": "Battle-Scarred",
+    "float": 0.6532,
+    "price": 1.45,
+    "image": "nova_rustic_halo.png",
+    "thumbnail": "assets/images/thumbs/nova_rustic_halo.png"
+  },
+  {
+    "id": "skin_008",
+    "name": "Silver Viper",
+    "weapon": "Desert Eagle",
+    "rarity": "Epic",
+    "exterior": "Minimal Wear",
+    "float": 0.0910,
+    "price": 54.00,
+    "image": "deagle_silver_viper.png",
+    "thumbnail": "assets/images/thumbs/deagle_silver_viper.png"
+  },
+  {
+    "id": "skin_009",
+    "name": "Solar Flare",
+    "weapon": "P250",
+    "rarity": "Uncommon",
+    "exterior": "Field-Tested",
+    "float": 0.2034,
+    "price": 6.75,
+    "image": "p250_solar_flare.png",
+    "thumbnail": "assets/images/thumbs/p250_solar_flare.png"
+  },
+  {
+    "id": "skin_010",
+    "name": "Obsidian Shard",
+    "weapon": "MP9",
+    "rarity": "Rare",
+    "exterior": "Well-Worn",
+    "float": 0.3956,
+    "price": 15.00,
+    "image": "mp9_obsidian_shard.png",
+    "thumbnail": "assets/images/thumbs/mp9_obsidian_shard.png"
+  },
+  {
+    "id": "skin_011",
+    "name": "Cerulean Wave",
+    "weapon": "USP-S",
+    "rarity": "Rare",
+    "exterior": "Minimal Wear",
+    "float": 0.1012,
+    "price": 22.00,
+    "image": "usp_cerulean_wave.png",
+    "thumbnail": "assets/images/thumbs/usp_cerulean_wave.png"
+  },
+  {
+    "id": "skin_012",
+    "name": "Copper Rust",
+    "weapon": "XM1014",
+    "rarity": "Common",
+    "exterior": "Battle-Scarred",
+    "float": 0.7894,
+    "price": 0.99,
+    "image": "xm1014_copper_rust.png",
+    "thumbnail": "assets/images/thumbs/xm1014_copper_rust.png"
+  },
+  {
+    "id": "skin_013",
+    "name": "Ivory Phantom",
+    "weapon": "M4A1-S",
+    "rarity": "Epic",
+    "exterior": "Factory New",
+    "float": 0.0456,
+    "price": 84.30,
+    "image": "m4a1s_ivory_phantom.png",
+    "thumbnail": "assets/images/thumbs/m4a1s_ivory_phantom.png"
+  },
+  {
+    "id": "skin_014",
+    "name": "Blightstreak",
+    "weapon": "FAMAS",
+    "rarity": "Uncommon",
+    "exterior": "Field-Tested",
+    "float": 0.2389,
+    "price": 5.50,
+    "image": "famas_blightstreak.png",
+    "thumbnail": "assets/images/thumbs/famas_blightstreak.png"
+  },
+  {
+    "id": "skin_015",
+    "name": "Midnight Edge",
+    "weapon": "Butterfly Knife",
+    "rarity": "Legendary",
+    "exterior": "Minimal Wear",
+    "float": 0.0715,
+    "price": 199.00,
+    "image": "knife_butterfly_midnight_edge.png",
+    "thumbnail": "assets/images/thumbs/knife_butterfly_midnight_edge.png"
+  },
+  {
+    "id": "skin_016",
+    "name": "Urban Camo",
+    "weapon": "UMP-45",
+    "rarity": "Common",
+    "exterior": "Well-Worn",
+    "float": 0.4210,
+    "price": 2.50,
+    "image": "ump_urban_camo.png",
+    "thumbnail": "assets/images/thumbs/ump_urban_camo.png"
+  },
+  {
+    "id": "skin_017",
+    "name": "Polar Frost",
+    "weapon": "SG 553",
+    "rarity": "Rare",
+    "exterior": "Field-Tested",
+    "float": 0.1937,
+    "price": 20.75,
+    "image": "sg553_polar_frost.png",
+    "thumbnail": "assets/images/thumbs/sg553_polar_frost.png"
+  },
+  {
+    "id": "skin_018",
+    "name": "Ember Weave",
+    "weapon": "CZ75-Auto",
+    "rarity": "Uncommon",
+    "exterior": "Minimal Wear",
+    "float": 0.1129,
+    "price": 8.20,
+    "image": "cz75_ember_weave.png",
+    "thumbnail": "assets/images/thumbs/cz75_ember_weave.png"
+  },
+  {
+    "id": "skin_019",
+    "name": "Venomous Mist",
+    "weapon": "MAC-10",
+    "rarity": "Rare",
+    "exterior": "Field-Tested",
+    "float": 0.2995,
+    "price": 12.00,
+    "image": "mac10_venomous_mist.png",
+    "thumbnail": "assets/images/thumbs/mac10_venomous_mist.png"
+  },
+  {
+    "id": "skin_020",
+    "name": "Vintage Oak",
+    "weapon": "Sawed-Off",
+    "rarity": "Common",
+    "exterior": "Battle-Scarred",
+    "float": 0.9221,
+    "price": 0.75,
+    "image": "sawedoff_vintage_oak.png",
+    "thumbnail": "assets/images/thumbs/sawedoff_vintage_oak.png"
+  }
+]
