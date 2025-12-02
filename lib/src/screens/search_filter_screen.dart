@@ -5,8 +5,6 @@ import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
 import 'package:cstrade/src/widgets/skin_card.dart';
-import 'package:cstrade/src/screens/detail_screen.dart';
-
 class SearchFilterScreen extends StatefulWidget {
   const SearchFilterScreen({super.key});
 
@@ -172,3 +170,4 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
     });
   }
 }
+

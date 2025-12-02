@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
@@ -163,3 +161,4 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
     );
   }
 }
+

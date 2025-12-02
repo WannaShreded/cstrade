@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
-import 'package:cstrade/src/screens/detail_screen.dart';
-
 class FeaturedCarousel extends StatefulWidget {
   const FeaturedCarousel({super.key});
 
@@ -170,3 +168,4 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
     );
   }
 }
+

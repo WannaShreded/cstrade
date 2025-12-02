@@ -3,8 +3,6 @@ import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
 import 'package:cstrade/src/widgets/skin_card.dart';
-import 'package:cstrade/src/screens/detail_screen.dart';
-
 class GalleryScreen extends StatelessWidget {
   final String category;
   const GalleryScreen({super.key, this.category = 'All'});
@@ -67,3 +65,4 @@ extension SkinCategoryExtension on Skin {
   /// `category` field/getter exists on the Skin model.
   String get category => '';
 }
+

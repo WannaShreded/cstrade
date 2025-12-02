@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:cstrade/src/models/skin.dart';
 
+// Clean, minimal SkinCard implementation. Keeps thumbnail, rarity visuals and floating info bar.
 class SkinCard extends StatefulWidget {
   final Skin skin;
   final VoidCallback? onTap;
@@ -43,94 +44,93 @@ class _SkinCardState extends State<SkinCard> {
       onExit: (_) => setState(() => _hovered = false),
       child: GestureDetector(
         onTapDown: (_) => _showFloatingBarTemporarily(),
+        onTap: widget.onTap,
         child: Stack(
           clipBehavior: Clip.none,
           children: [
-            InkWell(
-              onTap: widget.onTap,
-              child: Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Weapon image area with rarity-colored background
-                    SizedBox(
-                      height: 140,
+            Card(
+              clipBehavior: Clip.antiAlias,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // header image
+                  Container(
+                    height: 140,
+                    decoration: BoxDecoration(
+                      gradient: _rarityGradient(skin.rarity),
+                      borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                    ),
+                    child: Center(
                       child: Container(
+                        padding: const EdgeInsets.all(6),
                         decoration: BoxDecoration(
-                          gradient: _rarityGradient(skin.rarity),
-                          borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                          color: _rarityColor(skin.rarity).withOpacity(0.22),
+                          borderRadius: BorderRadius.circular(8),
                         ),
-                        child: Center(
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8),
-                            child: Container(
-                              width: 640,
-                              height: 640,
-                              color: _rarityColor(skin.rarity).withOpacity(0.22),
-                              child: skin.thumbnail.isNotEmpty
-                                  ? Hero(
-                                      tag: skin.id,
-                                      child: Image.asset(
-                                        skin.thumbnail,
-                                        fit: BoxFit.contain,
-                                        width: 64,
-                                        height: 64,
-                                        errorBuilder: (context, error, stackTrace) => Container(
-                                          width: 64,
-                                          height: 64,
-                                          color: Colors.grey[300],
-                                          child: const Center(child: Icon(Icons.broken_image)),
-                                        ),
-                                      ),
-                                    )
-                                  : Container(width: 80, height: 80, color: Colors.grey[300], child: const Center(child: Icon(Icons.image))),
-                            ),
-                          ),
-                        ),
+                        child: skin.thumbnail.isNotEmpty
+                            ? Hero(
+                                tag: skin.id,
+                                child: SizedBox(
+                                  width: 64,
+                                  height: 64,
+                                  child: Image.asset(
+                                    skin.thumbnail,
+                                    fit: BoxFit.contain,
+                                    errorBuilder: (context, error, stackTrace) => Container(
+                                      width: 64,
+                                      height: 64,
+                                      color: Colors.grey[300],
+                                      child: const Center(child: Icon(Icons.broken_image)),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            : Container(width: 80, height: 80, color: Colors.grey[300], child: const Center(child: Icon(Icons.image))),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(skin.name, maxLines: 1, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.bodyMedium),
-                                const SizedBox(height: 1),
-                                Text(skin.weapon, style: Theme.of(context).textTheme.labelSmall),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Text(skin.price.toStringAsFixed(2), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+                              Text(skin.name, maxLines: 1, overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.bodyMedium),
                               const SizedBox(height: 1),
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
-                                decoration: BoxDecoration(
-                                  gradient: _rarityPillGradient(skin.rarity),
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: Text(skin.rarity, style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w600)),
-                              ),
+                              Text(skin.weapon, style: Theme.of(context).textTheme.labelSmall),
                             ],
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(skin.price.toStringAsFixed(2), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+                            const SizedBox(height: 1),
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                              decoration: BoxDecoration(
+                                gradient: _rarityPillGradient(skin.rarity),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Text(skin.rarity, style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w600)),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
 
-            // Floating info bar
+            // floating info bar
             Positioned(
               left: 12,
               right: 12,
@@ -168,7 +168,6 @@ class _SkinCardState extends State<SkinCard> {
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                // Tiny rarity indicator
                                 Container(
                                   width: 6,
                                   height: 44,
@@ -222,35 +221,26 @@ class _SkinCardState extends State<SkinCard> {
 
   Color _rarityColor(String rarity) {
     final r = rarity.toLowerCase();
-    if (r.contains('consumer')) return const Color(0xFFBDBDBD); // slightly warmer Silver
-    if (r.contains('industrial')) return const Color(0xFF64B5F6); // stronger Baby Blue
-    if (r.contains('mil') || r.contains('mil-spec') || r.contains('mil-spec')) return const Color(0xFF2979FF); // brighter Blue
-    if (r.contains('restricted')) return const Color(0xFF8E24AA); // richer Purple
-    if (r.contains('classified')) return const Color(0xFFEC407A); // vivid Pink
-    if (r.contains('covert')) return const Color(0xFFE53935); // vivid Red
-    return Colors.grey; // default fallback
+    if (r.contains('consumer')) return const Color(0xFFBDBDBD);
+    if (r.contains('industrial')) return const Color(0xFF64B5F6);
+    if (r.contains('mil') || r.contains('mil-spec')) return const Color(0xFF2979FF);
+    if (r.contains('restricted')) return const Color(0xFF8E24AA);
+    if (r.contains('classified')) return const Color(0xFFEC407A);
+    if (r.contains('covert')) return const Color(0xFFE53935);
+    return Colors.grey;
   }
 
-  // Stronger multi-stop gradient based on rarity color
   LinearGradient _rarityGradient(String rarity) {
     final base = _rarityColor(rarity);
     final light = Color.lerp(base, Colors.white, 0.18) ?? base.withOpacity(0.95);
     final dark = Color.lerp(base, Colors.black, 0.22) ?? base.withOpacity(0.85);
-    return LinearGradient(
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
-      colors: [light, base, dark],
-    );
+    return LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [light, base, dark]);
   }
 
-  // Gradient for rarity pill
   LinearGradient _rarityPillGradient(String rarity) {
     final base = _rarityColor(rarity);
     final dark = Color.lerp(base, Colors.black, 0.15) ?? base.withOpacity(0.9);
-    return LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [base, dark],
-    );
+    return LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [base, dark]);
   }
+ 
 }
