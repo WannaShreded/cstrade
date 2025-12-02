@@ -6,7 +6,7 @@
     "rarity": "Covert",
     "exterior": "Factory New",
     "float": 0.0321,
-    "price": 1.8000,
+    "price": 1800.00,
     "image": "ak_fire_serpent.png",
     "thumbnail": "assets/images/thumbs/ak_fire_serpent.png"
   },
@@ -23,43 +23,43 @@
   },
   {
     "id": "skin_003",
-    "name": "Neon Drift",
+    "name": "StatTrak™ M4A1-S | Printstream",
     "weapon": "M4A4",
-    "rarity": "Industrial Grade",
-    "exterior": "Field-Tested",
-    "float": 0.2175,
-    "price": 24.99,
-    "image": "m4a4_neon_drift.png",
-    "thumbnail": "assets/images/thumbs/m4a4_neon_drift.png"
+    "rarity": "Covert",
+    "exterior": "Factory New",
+    "float": 0.002,
+    "price": 1347.50,
+    "image": "M4A1_Printstream.png",
+    "thumbnail": "assets/images/thumbs/M4A1_Printstream.png"
   },
   {
     "id": "skin_004",
-    "name": "Midnight Bloom",
-    "weapon": "Glock-18",
-    "rarity": "Mil-Spec",
+    "name": "Souvenir Desert Eagle | Hand Cannon",
+    "weapon": "Desert Eagle",
+    "rarity": "Restricted",
     "exterior": "Well-Worn",
-    "float": 0.4123,
-    "price": 7.25,
-    "image": "glock_midnight_bloom.png",
-    "thumbnail": "assets/images/thumbs/glock_midnight_bloom.png"
+    "float": 0.3962,
+    "price": 2024.83,
+    "image": "Hand_Cannon.png",
+    "thumbnail": "assets/images/thumbs/Hand_Cannon.png"
   },
   {
     "id": "skin_005",
-    "name": "Golden Edge",
+    "name": "★ Karambit | Doppler",
     "weapon": "Karambit",
     "rarity": "Covert",
     "exterior": "Factory New",
     "float": 0.0107,
-    "price": 249.99,
-    "image": "knife_golden_edge.png",
-    "thumbnail": "assets/images/thumbs/knife_golden_edge.png"
+    "price": 2023.56,
+    "image": "Doppler.png",
+    "thumbnail": "assets/images/thumbs/Doppler.png"
   },
   {
     "id": "skin_006",
-    "name": "Verdant Shift",
+    "name": "P90 | Run and Hide",
     "weapon": "P90",
-    "rarity": "Industrial Grade",
-    "exterior": "Field-Tested",
+    "rarity": "Classified",
+    "exterior": "Minimal Wear",
     "float": 0.2768,
     "price": 18.50,
     "image": "p90_verdant_shift.png",
@@ -67,7 +67,7 @@
   },
   {
     "id": "skin_007",
-    "name": "Rustic Halo",
+    "name": "Souvenir Nova | Candy Apple",
     "weapon": "Nova",
     "rarity": "Consumer Grade",
     "exterior": "Battle-Scarred",
@@ -78,18 +78,18 @@
   },
   {
     "id": "skin_008",
-    "name": "Silver Viper",
+    "name": "USP-S | Whiteout",
     "weapon": "Desert Eagle",
     "rarity": "Restricted",
     "exterior": "Minimal Wear",
     "float": 0.0910,
-    "price": 54.00,
+    "price": 1452.74,
     "image": "deagle_silver_viper.png",
     "thumbnail": "assets/images/thumbs/deagle_silver_viper.png"
   },
   {
     "id": "skin_009",
-    "name": "Solar Flare",
+    "name": "P250 | Copper Oxide",
     "weapon": "P250",
     "rarity": "Mil-Spec",
     "exterior": "Field-Tested",
@@ -100,7 +100,7 @@
   },
   {
     "id": "skin_010",
-    "name": "Obsidian Shard",
+    "name": "MP9 | Buff Blue",
     "weapon": "MP9",
     "rarity": "Industrial Grade",
     "exterior": "Well-Worn",
@@ -111,18 +111,18 @@
   },
   {
     "id": "skin_011",
-    "name": "Cerulean Wave",
+    "name": "StatTrak™ USP-S | Printstream",
     "weapon": "USP-S",
-    "rarity": "Industrial Grade",
-    "exterior": "Minimal Wear",
-    "float": 0.1012,
-    "price": 22.00,
-    "image": "usp_cerulean_wave.png",
-    "thumbnail": "assets/images/thumbs/usp_cerulean_wave.png"
+    "rarity": "Covert",
+    "exterior": "Factory New",
+    "float": 0.059,
+    "price": 389.24,
+    "image": "usp_printstream.png",
+    "thumbnail": "assets/images/thumbs/usp_printstream.png"
   },
   {
     "id": "skin_012",
-    "name": "Copper Rust",
+    "name": "Souvenir XM1014 | CaliCamo",
     "weapon": "XM1014",
     "rarity": "Consumer Grade",
     "exterior": "Battle-Scarred",
@@ -133,7 +133,7 @@
   },
   {
     "id": "skin_013",
-    "name": "Ivory Phantom",
+    "name": "StatTrak™ M4A1-S | Decimator",
     "weapon": "M4A1-S",
     "rarity": "Restricted",
     "exterior": "Factory New",
@@ -144,7 +144,7 @@
   },
   {
     "id": "skin_014",
-    "name": "Blightstreak",
+    "name": "FAMAS | Spitfire",
     "weapon": "FAMAS",
     "rarity": "Mil-Spec",
     "exterior": "Field-Tested",
@@ -155,18 +155,18 @@
   },
   {
     "id": "skin_015",
-    "name": "Midnight Edge",
+    "name": "★ Butterfly Knife | Damascus Steel",
     "weapon": "Butterfly Knife",
     "rarity": "Covert",
     "exterior": "Minimal Wear",
     "float": 0.0715,
-    "price": 199.00,
+    "price": 1800.00,
     "image": "knife_butterfly_midnight_edge.png",
     "thumbnail": "assets/images/thumbs/knife_butterfly_midnight_edge.png"
   },
   {
     "id": "skin_016",
-    "name": "Urban Camo",
+    "name": "UMP-45 | Fade",
     "weapon": "UMP-45",
     "rarity": "Consumer Grade",
     "exterior": "Well-Worn",
@@ -177,7 +177,7 @@
   },
   {
     "id": "skin_017",
-    "name": "Polar Frost",
+    "name": "SG 553 | Hazard Pay",
     "weapon": "SG 553",
     "rarity": "Industrial Grade",
     "exterior": "Field-Tested",
@@ -188,7 +188,7 @@
   },
   {
     "id": "skin_018",
-    "name": "Ember Weave",
+    "name": "StatTrak™ CZ75-Auto | Victoria",
     "weapon": "CZ75-Auto",
     "rarity": "Mil-Spec",
     "exterior": "Minimal Wear",
@@ -199,7 +199,7 @@
   },
   {
     "id": "skin_019",
-    "name": "Venomous Mist",
+    "name": "MAC-10 | Calf Skin",
     "weapon": "MAC-10",
     "rarity": "Industrial Grade",
     "exterior": "Field-Tested",
@@ -210,13 +210,68 @@
   },
   {
     "id": "skin_020",
-    "name": "Vintage Oak",
+    "name": "StatTrak™ Sawed-Off | The Kraken",
     "weapon": "Sawed-Off",
-    "rarity": "Consumer Grade",
+    "rarity": "Covert",
     "exterior": "Battle-Scarred",
     "float": 0.9221,
     "price": 0.75,
     "image": "sawedoff_vintage_oak.png",
     "thumbnail": "assets/images/thumbs/sawedoff_vintage_oak.png"
+  },
+  {
+    "id": "skin_021",
+    "name": "AK-47 | B the Monster",
+    "weapon": "AK-47",
+    "rarity": "Covert",
+    "exterior": "Factory New",
+    "float": 0.0980,
+    "price": 18.50,
+    "image": "ak47_cartel.png",
+    "thumbnail": "assets/images/thumbs/ak47_cartel.png"
+  },
+  {
+    "id": "skin_022",
+    "name": "★ StatTrak™ Bowie Knife | Blue Steel",
+    "weapon": "Bowie Knife",
+    "rarity": "Covert",
+    "exterior": "Field-Tested",
+    "float": 0.2345,
+    "price": 5.99,
+    "image": "blue_steel.png",
+    "thumbnail": "assets/images/thumbs/blue_steel.png"
+  },
+  {
+    "id": "skin_023",
+    "name": "AWP | Redline",
+    "weapon": "AWP",
+    "rarity": "Restricted",
+    "exterior": "Minimal Wear",
+    "float": 0.1362,
+    "price": 15.75,
+    "image": "awp_redline.png",
+    "thumbnail": "assets/images/thumbs/redline.png"
+  },
+  {
+    "id": "skin_024",
+    "name": "M4A1-S | Cyrex",
+    "weapon": "M4A1-S",
+    "rarity": "Restricted",
+    "exterior": "Field-Tested",
+    "float": 0.3551,
+    "price": 8.10,
+    "image": "m4a1s_cyrex.png",
+    "thumbnail": "assets/images/thumbs/cyrex.png"
+  },
+  {
+    "id": "skin_025",
+    "name": "Emerald Pinstripe",
+    "weapon": "AK-47",
+    "rarity": "Milspec",
+    "exterior": "Factory New",
+    "float": 0.0515,
+    "price": 1.25,
+    "image": "mac10_emerald_pinstripe.png",
+    "thumbnail": "assets/images/thumbs/emerald_pinstripe.png"
   }
 ]

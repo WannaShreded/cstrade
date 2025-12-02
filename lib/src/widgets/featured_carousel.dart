@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
+
 class FeaturedCarousel extends StatefulWidget {
   const FeaturedCarousel({super.key});
 
@@ -23,8 +24,11 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
     _timer = Timer.periodic(const Duration(seconds: 4), (t) {
       if (_pageController.hasClients && _featured.isNotEmpty) {
         final next = (_pageController.page?.round() ?? 0) + 1;
-        _pageController.animateToPage(next % _featured.length,
-            duration: const Duration(milliseconds: 350), curve: Curves.easeInOut);
+        _pageController.animateToPage(
+          next % _featured.length,
+          duration: const Duration(milliseconds: 350),
+          curve: Curves.easeInOut,
+        );
       }
     });
   }
@@ -56,7 +60,12 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
       return SizedBox(
         height: 140,
         child: Card(
-          child: Center(child: Text('Featured Skins', style: Theme.of(context).textTheme.titleLarge)),
+          child: Center(
+            child: Text(
+              'Featured Skins',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+          ),
         ),
       );
     }
@@ -71,16 +80,25 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
               itemCount: _featured.length,
               itemBuilder: (context, index) {
                 final skin = _featured[index];
-                final thumb = skin.thumbnail.isNotEmpty ? skin.thumbnail : skin.image;
-                final image = thumb.startsWith('assets/') ? thumb : 'assets/images/thumbs/$thumb';
+                final thumb = skin.thumbnail.isNotEmpty
+                    ? skin.thumbnail
+                    : skin.image;
+                final image = thumb.startsWith('assets/')
+                    ? thumb
+                    : 'assets/images/thumbs/$thumb';
 
                 return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 6,
+                    vertical: 6,
+                  ),
                   child: GestureDetector(
                     onTap: () => pushSkinDetail(context, skin),
                     child: Card(
                       clipBehavior: Clip.antiAlias,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
                       child: Stack(
                         fit: StackFit.expand,
                         children: [
@@ -92,7 +110,9 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
                               child: Image.asset(
                                 image,
                                 fit: BoxFit.contain,
-                                errorBuilder: (c, e, s) => Container(color: Theme.of(context).cardColor),
+                                errorBuilder: (c, e, s) => Container(
+                                  color: Theme.of(context).cardColor,
+                                ),
                               ),
                             ),
                           ),
@@ -105,7 +125,10 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
                                 gradient: LinearGradient(
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
-                                  colors: [const Color.fromARGB(0, 247, 2, 2), Colors.black.withOpacity(0.45)],
+                                  colors: [
+                                    const Color.fromARGB(0, 247, 2, 2),
+                                    Colors.black.withOpacity(0.45),
+                                  ],
                                 ),
                               ),
                             ),
@@ -117,12 +140,21 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
                             child: Row(
                               children: [
                                 Expanded(
-                                  child: Text(skin.name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+                                  child: Text(
+                                    skin.name,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
                                 ),
-                                Text('\$ ${skin.price.toStringAsFixed(2)}', style: const TextStyle(color: Colors.white70)),
+                                Text(
+                                  '\$ ${skin.price.toStringAsFixed(2)}',
+                                  style: const TextStyle(color: Colors.white70),
+                                ),
                               ],
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -149,7 +181,8 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
               animation: _pageController,
               builder: (context, child) {
                 double selected = 0;
-                if (_pageController.hasClients && _pageController.page != null) {
+                if (_pageController.hasClients &&
+                    _pageController.page != null) {
                   selected = (_pageController.page! - i).abs();
                 }
                 final t = (1.0 - (selected.clamp(0.0, 1.0))); // 0..1
@@ -158,7 +191,10 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   width: width,
                   height: 6,
-                  decoration: BoxDecoration(color: Colors.white.withOpacity(0.9 * t), borderRadius: BorderRadius.circular(3)),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.9 * t),
+                    borderRadius: BorderRadius.circular(3),
+                  ),
                 );
               },
             );
@@ -168,4 +204,3 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
     );
   }
 }
-

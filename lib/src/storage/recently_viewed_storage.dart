@@ -8,7 +8,8 @@ class RecentlyViewedStorage {
   static RecentlyViewedStorage? _instance;
 
   /// Singleton instance
-  static RecentlyViewedStorage get instance => _instance ??= RecentlyViewedStorage._(SharedPreferences.getInstance());
+  static RecentlyViewedStorage get instance =>
+      _instance ??= RecentlyViewedStorage._(SharedPreferences.getInstance());
 
   List<String>? _cache;
   final int _capacity = 12;

@@ -7,7 +7,8 @@ class SkinProvider extends ChangeNotifier {
   List<Skin> _skins = [];
   bool _loading = false;
 
-  SkinProvider({SkinService? service}) : _service = service ?? const SkinService();
+  SkinProvider({SkinService? service})
+    : _service = service ?? const SkinService();
 
   List<Skin> get skins => _skins;
   bool get isLoading => _loading;

@@ -24,38 +24,58 @@ class Skin {
   });
 
   factory Skin.fromJson(Map<String, dynamic> json) => Skin(
-        id: json['id'] as String,
-        name: json['name'] as String,
-        weapon: json['weapon'] as String,
-        rarity: json['rarity'] as String,
-        exterior: json['exterior'] as String,
-        floatValue: (json['float'] as num).toDouble(),
-        price: (json['price'] as num).toDouble(),
-        image: json['image'] as String,
-        thumbnail: json['thumbnail'] as String,
-      );
+    id: json['id'] as String,
+    name: json['name'] as String,
+    weapon: json['weapon'] as String,
+    rarity: json['rarity'] as String,
+    exterior: json['exterior'] as String,
+    floatValue: (json['float'] as num).toDouble(),
+    price: (json['price'] as num).toDouble(),
+    image: json['image'] as String,
+    thumbnail: json['thumbnail'] as String,
+  );
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-        'weapon': weapon,
-        'rarity': rarity,
-        'exterior': exterior,
-        'float': floatValue,
-        'price': price,
-        'image': image,
-        'thumbnail': thumbnail,
-      };
+    'id': id,
+    'name': name,
+    'weapon': weapon,
+    'rarity': rarity,
+    'exterior': exterior,
+    'float': floatValue,
+    'price': price,
+    'image': image,
+    'thumbnail': thumbnail,
+  };
 
   /// Simple heuristic category getter used by the prototype UI for filtering.
   /// Maps weapon names to one of: `Rifles`, `Pistols`, `Knives`, `Gloves`, `SMGs`, `Sniper`.
   String get category {
     final w = weapon.toLowerCase();
-    if (w.contains('knife') || w.contains('karambit') || w.contains('butterfly')) return 'Knives';
+    if (w.contains('knife') ||
+        w.contains('karambit') ||
+        w.contains('butterfly'))
+      return 'Knives';
     if (w.contains('glove')) return 'Gloves';
-    if (w.contains('p90') || w.contains('mp9') || w.contains('mac-10') || w.contains('ump') || w.contains('mp5') || w.contains('p90')) return 'SMGs';
-    if (w.contains('awp') || w.contains('ssg') || w.contains('sg') || w.contains('scar') || w.contains('sniper')) return 'Sniper';
-    if (w.contains('glock') || w.contains('deagle') || w.contains('usp') || w.contains('p250') || w.contains('cz75') || w.contains('hand cannon')) return 'Pistols';
+    if (w.contains('p90') ||
+        w.contains('mp9') ||
+        w.contains('mac-10') ||
+        w.contains('ump') ||
+        w.contains('mp5') ||
+        w.contains('p90'))
+      return 'SMGs';
+    if (w.contains('awp') ||
+        w.contains('ssg') ||
+        w.contains('sg') ||
+        w.contains('scar') ||
+        w.contains('sniper'))
+      return 'Sniper';
+    if (w.contains('glock') ||
+        w.contains('deagle') ||
+        w.contains('usp') ||
+        w.contains('p250') ||
+        w.contains('cz75') ||
+        w.contains('hand cannon'))
+      return 'Pistols';
     // Default to Rifles for anything else (AK-47, M4A4, M4A1-S, SG553, FAMAS, etc.)
     return 'Rifles';
   }

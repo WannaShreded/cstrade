@@ -97,11 +97,16 @@ class _SkinFilterBarState extends State<SkinFilterBar> {
           children: [
             Expanded(
               child: InputDecorator(
-                decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  isDense: true,
+                ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: _rarity,
-                    items: rarities.map((r) => DropdownMenuItem(value: r, child: Text(r))).toList(),
+                    items: rarities
+                        .map((r) => DropdownMenuItem(value: r, child: Text(r)))
+                        .toList(),
                     onChanged: _onRarityChanged,
                     isExpanded: true,
                   ),
@@ -111,11 +116,16 @@ class _SkinFilterBarState extends State<SkinFilterBar> {
             const SizedBox(width: 8),
             Expanded(
               child: InputDecorator(
-                decoration: const InputDecoration(border: OutlineInputBorder(), isDense: true),
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  isDense: true,
+                ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: _exterior,
-                    items: exteriors.map((e) => DropdownMenuItem(value: e, child: Text(e))).toList(),
+                    items: exteriors
+                        .map((e) => DropdownMenuItem(value: e, child: Text(e)))
+                        .toList(),
                     onChanged: _onExteriorChanged,
                     isExpanded: true,
                   ),

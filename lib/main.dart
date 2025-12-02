@@ -4,7 +4,6 @@ import 'package:cstrade/src/screens/home_screen.dart';
 import 'package:cstrade/src/providers/skin_provider.dart';
 import 'package:cstrade/src/utils/theme.dart';
 
-
 void main() {
   runApp(const MyApp());
 }

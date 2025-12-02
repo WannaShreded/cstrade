@@ -60,7 +60,11 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
 
   @override
   Widget build(BuildContext context) {
-    if (_loading) return const SizedBox(height: 140, child: Center(child: CircularProgressIndicator()));
+    if (_loading)
+      return const SizedBox(
+        height: 140,
+        child: Center(child: CircularProgressIndicator()),
+      );
     if (_items.isEmpty) return const SizedBox.shrink();
 
     return Column(
@@ -68,7 +72,14 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
       children: [
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
-          child: Text('Recently Viewed', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: Colors.white)),
+          child: Text(
+            'Recently Viewed',
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
+              color: Colors.white,
+            ),
+          ),
         ),
         SizedBox(
           height: 140,
@@ -101,10 +112,20 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
                       decoration: BoxDecoration(
                         color: Colors.grey.shade900.withOpacity(0.24),
                         borderRadius: BorderRadius.circular(10),
-                        border: Border.all(color: Colors.white.withOpacity(0.04)),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.04),
+                        ),
                         boxShadow: [
-                          BoxShadow(color: Colors.black.withOpacity(0.6), blurRadius: 8, offset: const Offset(0, 6)),
-                          BoxShadow(color: color.withOpacity(0.14), blurRadius: 18, spreadRadius: 0.2),
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.6),
+                            blurRadius: 8,
+                            offset: const Offset(0, 6),
+                          ),
+                          BoxShadow(
+                            color: color.withOpacity(0.14),
+                            blurRadius: 18,
+                            spreadRadius: 0.2,
+                          ),
                         ],
                       ),
                       child: Column(
@@ -113,7 +134,9 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
                           // image
                           Expanded(
                             child: ClipRRect(
-                              borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
+                              borderRadius: const BorderRadius.vertical(
+                                top: Radius.circular(10),
+                              ),
                               child: Container(
                                 color: color.withOpacity(0.08),
                                 child: Center(
@@ -122,26 +145,47 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
                                     fit: BoxFit.contain,
                                     width: 68,
                                     height: 68,
-                                    errorBuilder: (ctx, err, st) => const Icon(Icons.broken_image),
+                                    errorBuilder: (ctx, err, st) =>
+                                        const Icon(Icons.broken_image),
                                   ),
                                 ),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 8.0,
+                              vertical: 6,
+                            ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(skin.weapon, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 12)),
+                                Text(
+                                  skin.weapon,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 12,
+                                  ),
+                                ),
                                 const SizedBox(height: 4),
                                 Container(
                                   width: 36,
                                   height: 6,
                                   decoration: BoxDecoration(
-                                    gradient: LinearGradient(colors: [color, color.withOpacity(0.6)]),
+                                    gradient: LinearGradient(
+                                      colors: [color, color.withOpacity(0.6)],
+                                    ),
                                     borderRadius: BorderRadius.circular(6),
-                                    boxShadow: [BoxShadow(color: color.withOpacity(0.22), blurRadius: 12, spreadRadius: 0.2)],
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: color.withOpacity(0.22),
+                                        blurRadius: 12,
+                                        spreadRadius: 0.2,
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
@@ -161,4 +205,3 @@ class _RecentlyViewedState extends State<RecentlyViewed> {
     );
   }
 }
-

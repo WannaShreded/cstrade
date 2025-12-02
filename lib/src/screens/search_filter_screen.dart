@@ -5,6 +5,7 @@ import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
 import 'package:cstrade/src/widgets/skin_card.dart';
+
 class SearchFilterScreen extends StatefulWidget {
   const SearchFilterScreen({super.key});
 
@@ -25,7 +26,9 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Search & Filters'),
-        actions: [IconButton(icon: const Icon(Icons.refresh), onPressed: _reset)],
+        actions: [
+          IconButton(icon: const Icon(Icons.refresh), onPressed: _reset),
+        ],
       ),
       body: SafeArea(
         child: Padding(
@@ -34,37 +37,59 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextField(
-                decoration: const InputDecoration(prefixIcon: Icon(Icons.search), hintText: 'Search skins, weapons, authors…'),
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.search),
+                  hintText: 'Search skins, weapons, authors…',
+                ),
                 onChanged: (v) => _onQueryChanged(v),
               ),
               const SizedBox(height: 16),
-              const Text('Rarity', style: TextStyle(fontWeight: FontWeight.w600)),
+              const Text(
+                'Rarity',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
               const SizedBox(height: 8),
               Wrap(
                 spacing: 8,
-                children: ['Consumer Grade', 'Industrial Grade', 'Mil-Spec', 'Restricted', 'Classified', 'Covert']
-                    .map((r) => FilterChip(
-                          label: Text(r),
-                          selected: rarities.contains(r),
-                          onSelected: (v) {
-                            setState(() => v ? rarities.add(r) : rarities.remove(r));
-                            _applyFilters();
-                          },
-                        ))
-                    .toList(),
+                children:
+                    [
+                          'Consumer Grade',
+                          'Industrial Grade',
+                          'Mil-Spec',
+                          'Restricted',
+                          'Classified',
+                          'Covert',
+                        ]
+                        .map(
+                          (r) => FilterChip(
+                            label: Text(r),
+                            selected: rarities.contains(r),
+                            onSelected: (v) {
+                              setState(
+                                () => v ? rarities.add(r) : rarities.remove(r),
+                              );
+                              _applyFilters();
+                            },
+                          ),
+                        )
+                        .toList(),
               ),
-              
+
               // Results
-              if (_loading) const Expanded(child: Center(child: CircularProgressIndicator())),
+              if (_loading)
+                const Expanded(
+                  child: Center(child: CircularProgressIndicator()),
+                ),
               if (!_loading && _results.isNotEmpty)
                 Expanded(
                   child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio: 1.15,
-                      crossAxisSpacing: 8,
-                      mainAxisSpacing: 8,
-                    ),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          childAspectRatio: 1.15,
+                          crossAxisSpacing: 8,
+                          mainAxisSpacing: 8,
+                        ),
                     itemCount: _results.length,
                     itemBuilder: (context, index) {
                       final skin = _results[index];
@@ -75,7 +100,8 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
                     },
                   ),
                 ),
-              if (!_loading && _results.isEmpty) const Expanded(child: Center(child: Text('No results'))),
+              if (!_loading && _results.isEmpty)
+                const Expanded(child: Center(child: Text('No results'))),
 
               Row(
                 children: [
@@ -96,7 +122,7 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),
@@ -146,7 +172,15 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
       }).toList();
     }
     if (rarities.isNotEmpty) {
-      list = list.where((s) => rarities.any((r) => s.rarity.toLowerCase().contains(r.toLowerCase().split(' ').first))).toList();
+      list = list
+          .where(
+            (s) => rarities.any(
+              (r) => s.rarity.toLowerCase().contains(
+                r.toLowerCase().split(' ').first,
+              ),
+            ),
+          )
+          .toList();
     }
     setState(() {
       _results = list;
@@ -170,4 +204,3 @@ class _SearchFilterScreenState extends State<SearchFilterScreen> {
     });
   }
 }
-

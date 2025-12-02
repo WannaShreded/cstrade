@@ -3,6 +3,7 @@ import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
 import 'package:cstrade/src/utils/navigation.dart';
 import 'package:cstrade/src/widgets/skin_card.dart';
+
 class GalleryScreen extends StatelessWidget {
   final String category;
   const GalleryScreen({super.key, this.category = 'All'});
@@ -13,7 +14,9 @@ class GalleryScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(category),
         leading: BackButton(onPressed: () => Navigator.pop(context)),
-        actions: [IconButton(icon: const Icon(Icons.filter_list), onPressed: () {})],
+        actions: [
+          IconButton(icon: const Icon(Icons.filter_list), onPressed: () {}),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -28,7 +31,8 @@ class GalleryScreen extends StatelessWidget {
             }
             final all = snapshot.data ?? <Skin>[];
             final filtered = _filterByCategory(all, category);
-            if (filtered.isEmpty) return const Center(child: Text('No skins found'));
+            if (filtered.isEmpty)
+              return const Center(child: Text('No skins found'));
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
@@ -39,9 +43,9 @@ class GalleryScreen extends StatelessWidget {
               itemCount: filtered.length,
               itemBuilder: (context, index) {
                 final skin = filtered[index];
-                            return SkinCard(
-                              skin: skin,
-                              onTap: () => pushSkinDetail(context, skin),
+                return SkinCard(
+                  skin: skin,
+                  onTap: () => pushSkinDetail(context, skin),
                 );
               },
             );
@@ -51,13 +55,13 @@ class GalleryScreen extends StatelessWidget {
     );
   }
 
-    List<Skin> _filterByCategory(List<Skin> skins, String category) {
-      if (category == 'All') {
-        return skins;
-      }
-      return skins.where((skin) => skin.category == category).toList();
+  List<Skin> _filterByCategory(List<Skin> skins, String category) {
+    if (category == 'All') {
+      return skins;
     }
+    return skins.where((skin) => skin.category == category).toList();
   }
+}
 
 extension SkinCategoryExtension on Skin {
   /// Fallback `category` getter so the gallery compiles when the model
@@ -65,4 +69,3 @@ extension SkinCategoryExtension on Skin {
   /// `category` field/getter exists on the Skin model.
   String get category => '';
 }
-

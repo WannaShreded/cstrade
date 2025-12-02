@@ -9,7 +9,8 @@ class FavoritesStorage {
   static FavoritesStorage? _instance;
 
   /// Singleton instance
-  static FavoritesStorage get instance => _instance ??= FavoritesStorage._(SharedPreferences.getInstance());
+  static FavoritesStorage get instance =>
+      _instance ??= FavoritesStorage._(SharedPreferences.getInstance());
 
   Set<String>? _cache;
 

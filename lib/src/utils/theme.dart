@@ -17,14 +17,20 @@ ThemeData cs2Theme() {
       backgroundColor: Colors.transparent,
       elevation: 0,
       centerTitle: true,
-      titleTextStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: Colors.white),
+      titleTextStyle: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w700,
+        color: Colors.white,
+      ),
       iconTheme: IconThemeData(color: Colors.white70),
     ),
     cardTheme: const CardThemeData(
       color: Color(0xFF0D1620),
       elevation: 4,
       margin: EdgeInsets.symmetric(vertical: 6, horizontal: 8),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(12)),
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -37,7 +43,9 @@ ThemeData cs2Theme() {
         elevation: 3,
       ),
     ),
-    textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: const Color(0xFF00E5FF))),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(foregroundColor: const Color(0xFF00E5FF)),
+    ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: Color(0xFF00E5FF),
       foregroundColor: Colors.black,
@@ -48,19 +56,42 @@ ThemeData cs2Theme() {
       fillColor: Color(0xFF0B1420),
       isDense: true,
       contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8)), borderSide: BorderSide.none),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(8)),
+        borderSide: BorderSide.none,
+      ),
       hintStyle: TextStyle(color: Colors.white54),
     ),
     iconTheme: const IconThemeData(color: Colors.white70),
     dividerColor: Colors.white12,
     textTheme: const TextTheme(
-      displayLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: Colors.white),
-      headlineMedium: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, color: Colors.white),
-      titleLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white),
-      titleMedium: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white),
+      displayLarge: TextStyle(
+        fontSize: 32,
+        fontWeight: FontWeight.w800,
+        color: Colors.white,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        color: Colors.white,
+      ),
+      titleLarge: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.w700,
+        color: Colors.white,
+      ),
+      titleMedium: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+        color: Colors.white,
+      ),
       bodyLarge: TextStyle(fontSize: 14, color: Colors.white70),
       bodyMedium: TextStyle(fontSize: 13, color: Colors.white70),
-      labelLarge: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Color(0xFF00E5FF)),
+      labelLarge: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w600,
+        color: Color(0xFF00E5FF),
+      ),
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color(0xFF071122),
