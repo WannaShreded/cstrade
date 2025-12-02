@@ -47,6 +47,19 @@ class Skin {
         'thumbnail': thumbnail,
       };
 
+  /// Simple heuristic category getter used by the prototype UI for filtering.
+  /// Maps weapon names to one of: `Rifles`, `Pistols`, `Knives`, `Gloves`, `SMGs`, `Sniper`.
+  String get category {
+    final w = weapon.toLowerCase();
+    if (w.contains('knife') || w.contains('karambit') || w.contains('butterfly')) return 'Knives';
+    if (w.contains('glove')) return 'Gloves';
+    if (w.contains('p90') || w.contains('mp9') || w.contains('mac-10') || w.contains('ump') || w.contains('mp5') || w.contains('p90')) return 'SMGs';
+    if (w.contains('awp') || w.contains('ssg') || w.contains('sg') || w.contains('scar') || w.contains('sniper')) return 'Sniper';
+    if (w.contains('glock') || w.contains('deagle') || w.contains('usp') || w.contains('p250') || w.contains('cz75') || w.contains('hand cannon')) return 'Pistols';
+    // Default to Rifles for anything else (AK-47, M4A4, M4A1-S, SG553, FAMAS, etc.)
+    return 'Rifles';
+  }
+
   static List<Skin> listFromJson(String jsonStr) {
     final data = json.decode(jsonStr) as List<dynamic>;
     return data.map((e) => Skin.fromJson(e as Map<String, dynamic>)).toList();

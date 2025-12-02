@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cstrade/src/models/skin.dart';
 import 'package:cstrade/src/services/skin_service.dart';
+import 'package:cstrade/src/utils/navigation.dart';
 import 'package:cstrade/src/widgets/skin_card.dart';
 import 'package:cstrade/src/screens/detail_screen.dart';
 
@@ -33,19 +34,16 @@ class GalleryScreen extends StatelessWidget {
             return GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 0.78,
+                childAspectRatio: 1.2,
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
               ),
               itemCount: filtered.length,
               itemBuilder: (context, index) {
                 final skin = filtered[index];
-                return SkinCard(
-                  skin: skin,
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => SkinDetailScreen(skin: skin)),
-                  ),
+                            return SkinCard(
+                              skin: skin,
+                              onTap: () => pushSkinDetail(context, skin),
                 );
               },
             );

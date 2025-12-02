@@ -32,11 +32,11 @@ class _SkinFilterBarState extends State<SkinFilterBar> {
 
   static const List<String> rarities = [
     'Any',
-    'Common',
-    'Uncommon',
-    'Rare',
-    'Epic',
-    'Legendary',
+    'Consumer Grade',
+    'Industrial Grade',
+    'Mil-Spec',
+    'Restricted',
+    'Classified',
     'Covert',
   ];
 
