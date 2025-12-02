@@ -7,8 +7,8 @@
     "exterior": "Factory New",
     "float": 0.0321,
     "price": 1800.00,
-    "image": "ak_fire_serpent.png",
-    "thumbnail": "assets/images/thumbs/ak_fire_serpent.png"
+    "image": "fire_serpent.png",
+    "thumbnail": "assets/images/thumbs/fire_serpent.png"
   },
   {
     "id": "skin_002",
@@ -18,8 +18,8 @@
     "exterior": "Minimal Wear",
     "float": 0.0824,
     "price": 585.00,
-    "image": "ak47_the_oligarch.png",
-    "thumbnail": "assets/images/thumbs/ak47_the_oligarch.png"
+    "image": "the_oligarch.png",
+    "thumbnail": "assets/images/thumbs/the_oligarch.png"
   },
   {
     "id": "skin_003",
@@ -29,8 +29,8 @@
     "exterior": "Factory New",
     "float": 0.002,
     "price": 1347.50,
-    "image": "M4A1_Printstream.png",
-    "thumbnail": "assets/images/thumbs/M4A1_Printstream.png"
+    "image": "m4a1s_prinstream.png",
+    "thumbnail": "assets/images/thumbs/m4a1s_prinstream.png"
   },
   {
     "id": "skin_004",
@@ -40,8 +40,8 @@
     "exterior": "Well-Worn",
     "float": 0.3962,
     "price": 2024.83,
-    "image": "Hand_Cannon.png",
-    "thumbnail": "assets/images/thumbs/Hand_Cannon.png"
+    "image": "hand_cannon.png",
+    "thumbnail": "assets/images/thumbs/hand_cannon.png"
   },
   {
     "id": "skin_005",
@@ -51,8 +51,8 @@
     "exterior": "Factory New",
     "float": 0.0107,
     "price": 2023.56,
-    "image": "Doppler.png",
-    "thumbnail": "assets/images/thumbs/Doppler.png"
+    "image": "doppler.png",
+    "thumbnail": "assets/images/thumbs/doppler.png"
   },
   {
     "id": "skin_006",
@@ -62,8 +62,8 @@
     "exterior": "Minimal Wear",
     "float": 0.2768,
     "price": 18.50,
-    "image": "p90_verdant_shift.png",
-    "thumbnail": "assets/images/thumbs/p90_verdant_shift.png"
+    "image": "run_n_hide.png",
+    "thumbnail": "assets/images/thumbs/run_n_hide.png"
   },
   {
     "id": "skin_007",
@@ -73,8 +73,8 @@
     "exterior": "Battle-Scarred",
     "float": 0.6532,
     "price": 1.45,
-    "image": "nova_rustic_halo.png",
-    "thumbnail": "assets/images/thumbs/nova_rustic_halo.png"
+    "image": "candy_apple.png",
+    "thumbnail": "assets/images/thumbs/candy_apple.png"
   },
   {
     "id": "skin_008",
@@ -84,8 +84,8 @@
     "exterior": "Minimal Wear",
     "float": 0.0910,
     "price": 1452.74,
-    "image": "deagle_silver_viper.png",
-    "thumbnail": "assets/images/thumbs/deagle_silver_viper.png"
+    "image": "whiteout.png",
+    "thumbnail": "assets/images/thumbs/whiteout.png"
   },
   {
     "id": "skin_009",
@@ -95,8 +95,8 @@
     "exterior": "Field-Tested",
     "float": 0.2034,
     "price": 6.75,
-    "image": "p250_solar_flare.png",
-    "thumbnail": "assets/images/thumbs/p250_solar_flare.png"
+    "image": "oxide.png",
+    "thumbnail": "assets/images/thumbs/oxide.png"
   },
   {
     "id": "skin_010",
@@ -106,8 +106,8 @@
     "exterior": "Well-Worn",
     "float": 0.3956,
     "price": 15.00,
-    "image": "mp9_obsidian_shard.png",
-    "thumbnail": "assets/images/thumbs/mp9_obsidian_shard.png"
+    "image": "buff_blue.png",
+    "thumbnail": "assets/images/thumbs/buff_blue.png"
   },
   {
     "id": "skin_011",
@@ -117,8 +117,8 @@
     "exterior": "Factory New",
     "float": 0.059,
     "price": 389.24,
-    "image": "usp_printstream.png",
-    "thumbnail": "assets/images/thumbs/usp_printstream.png"
+    "image": "usps_prinststream.png",
+    "thumbnail": "assets/images/thumbs/usps_prinststream.png"
   },
   {
     "id": "skin_012",
@@ -128,8 +128,8 @@
     "exterior": "Battle-Scarred",
     "float": 0.7894,
     "price": 0.99,
-    "image": "xm1014_copper_rust.png",
-    "thumbnail": "assets/images/thumbs/xm1014_copper_rust.png"
+    "image": "calicamo.png",
+    "thumbnail": "assets/images/thumbs/calicamo.png"
   },
   {
     "id": "skin_013",
@@ -139,8 +139,8 @@
     "exterior": "Factory New",
     "float": 0.0456,
     "price": 84.30,
-    "image": "m4a1s_ivory_phantom.png",
-    "thumbnail": "assets/images/thumbs/m4a1s_ivory_phantom.png"
+    "image": "decimator.png",
+    "thumbnail": "assets/images/thumbs/decimator.png"
   },
   {
     "id": "skin_014",
@@ -150,8 +150,8 @@
     "exterior": "Field-Tested",
     "float": 0.2389,
     "price": 5.50,
-    "image": "famas_blightstreak.png",
-    "thumbnail": "assets/images/thumbs/famas_blightstreak.png"
+    "image": "spitfire.png",
+    "thumbnail": "assets/images/thumbs/spitfire.png"
   },
   {
     "id": "skin_015",
@@ -161,8 +161,8 @@
     "exterior": "Minimal Wear",
     "float": 0.0715,
     "price": 1800.00,
-    "image": "knife_butterfly_midnight_edge.png",
-    "thumbnail": "assets/images/thumbs/knife_butterfly_midnight_edge.png"
+    "image": "damascus_steel.png",
+    "thumbnail": "assets/images/thumbs/damascus_steel.png"
   },
   {
     "id": "skin_016",
@@ -172,8 +172,8 @@
     "exterior": "Well-Worn",
     "float": 0.4210,
     "price": 2.50,
-    "image": "ump_urban_camo.png",
-    "thumbnail": "assets/images/thumbs/ump_urban_camo.png"
+    "image": "fade.png",
+    "thumbnail": "assets/images/thumbs/fade.png"
   },
   {
     "id": "skin_017",
@@ -183,8 +183,8 @@
     "exterior": "Field-Tested",
     "float": 0.1937,
     "price": 20.75,
-    "image": "sg553_polar_frost.png",
-    "thumbnail": "assets/images/thumbs/sg553_polar_frost.png"
+    "image": "hazard_pay.png",
+    "thumbnail": "assets/images/thumbs/hazard_pay.png"
   },
   {
     "id": "skin_018",
@@ -194,8 +194,8 @@
     "exterior": "Minimal Wear",
     "float": 0.1129,
     "price": 8.20,
-    "image": "cz75_ember_weave.png",
-    "thumbnail": "assets/images/thumbs/cz75_ember_weave.png"
+    "image": "victoria.png",
+    "thumbnail": "assets/images/thumbs/victoria.png"
   },
   {
     "id": "skin_019",
@@ -205,8 +205,8 @@
     "exterior": "Field-Tested",
     "float": 0.2995,
     "price": 12.00,
-    "image": "mac10_venomous_mist.png",
-    "thumbnail": "assets/images/thumbs/mac10_venomous_mist.png"
+    "image": "calf_skin.png",
+    "thumbnail": "assets/images/thumbs/calf_skin.png"
   },
   {
     "id": "skin_020",
@@ -216,8 +216,8 @@
     "exterior": "Battle-Scarred",
     "float": 0.9221,
     "price": 0.75,
-    "image": "sawedoff_vintage_oak.png",
-    "thumbnail": "assets/images/thumbs/sawedoff_vintage_oak.png"
+    "image": "the_kraken.png",
+    "thumbnail": "assets/images/thumbs/the_kraken.png"
   },
   {
     "id": "skin_021",
@@ -227,8 +227,8 @@
     "exterior": "Factory New",
     "float": 0.0980,
     "price": 18.50,
-    "image": "ak47_cartel.png",
-    "thumbnail": "assets/images/thumbs/ak47_cartel.png"
+    "image": "b_the_monster.png",
+    "thumbnail": "assets/images/thumbs/b_the_monster.png"
   },
   {
     "id": "skin_022",
@@ -249,7 +249,7 @@
     "exterior": "Minimal Wear",
     "float": 0.1362,
     "price": 15.75,
-    "image": "awp_redline.png",
+    "image": "redline.png",
     "thumbnail": "assets/images/thumbs/redline.png"
   },
   {
@@ -271,7 +271,7 @@
     "exterior": "Factory New",
     "float": 0.0515,
     "price": 1.25,
-    "image": "mac10_emerald_pinstripe.png",
+    "image": "emerald_pinstripe.png",
     "thumbnail": "assets/images/thumbs/emerald_pinstripe.png"
   }
 ]
