@@ -302,6 +302,8 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE). Anda bebas menggunakan,
 ### Sumber Daya
 - **Counter-Strike 2** - Valve Corporation
   - Referensi data skin dan warna rarity
+    
+- **CSFloat**
   - UI/UX gaming inspiration
 
 - **Flutter Community**
