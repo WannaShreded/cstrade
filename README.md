@@ -60,16 +60,16 @@ Aplikasi galeri skin Counter-Strike 2 yang dibangun dengan Flutter. Jelajahi kol
 
 ### Home Screen
 
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/913abf5b-93c2-46b8-b7e7-e75be6938fce" />
+<img width="275" height="980" alt="image" src="https://github.com/user-attachments/assets/913abf5b-93c2-46b8-b7e7-e75be6938fce" />
 
 
 
 ### Galeri/Browse
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/3ea129a2-d79e-4efc-93ba-d69e7a34d3d3" />
+<img width="275" height="980" alt="image" src="https://github.com/user-attachments/assets/3ea129a2-d79e-4efc-93ba-d69e7a34d3d3" />
 
 
 ### Detail Screen
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/71f7d284-0b8e-42cb-b84e-42c3d80e85b6" />
+<img width="275" height="980" alt="image" src="https://github.com/user-attachments/assets/71f7d284-0b8e-42cb-b84e-42c3d80e85b6" />
 
 
 ## 🛠 Stack Teknologi
