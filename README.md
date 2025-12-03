@@ -197,15 +197,17 @@ flutter doctor
 ## 📦 Persyaratan
 
 ### SDK & Tools
-- **Flutter SDK**: 3.0.0 atau lebih tinggi
-- **Dart SDK**: 3.0.0 atau lebih tinggi
-- **Android SDK**: API level 21 (Android 5.0) atau lebih tinggi
-- **iOS**: iOS 11.0 atau lebih tinggi
+- **Flutter SDK**: 3.24.0
+- **Dart SDK**: 3.5.0
+- **Android Gradle Plugin**: 8.9.1
+- **Kotlin**: 2.1.0
+- **Android SDK**: API level 35
+
 
 ### Hardware
 - **RAM Minimum**: 4GB
 - **Storage**: 500MB untuk development
-- **Device Support**: Android 5.0+, iOS 11.0+
+- **Device Support**: Android 5.0+
 
 ### Dependensi Penting
 
