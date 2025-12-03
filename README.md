@@ -98,8 +98,7 @@ cstrade/
 │       │   ├── gallery_screen.dart  # Galeri kategori
 │       │   ├── detail_screen.dart   # Detail skin
 │       │   ├── search_filter_screen.dart
-│       │   ├── favorites_screen.dart
-│       │   └── category_screen.dart
+│       │   └── favorites_screen.dart
 │       │
 │       ├── widgets/
 │       │   ├── skin_card.dart       # Kartu skin individu
